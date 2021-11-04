@@ -1,0 +1,246 @@
+.channel-list {
+  overflow-y: scroll;
+}
+
+.channel-list::-webkit-scrollbar {
+  width: 5px;    
+}
+
+.channel-list::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 5px;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  width: 7.5px;  
+}
+
+body::-webkit-scrollbar {
+  background-color: gray;
+  border-radius: 5px;
+}
+
+.appbar {
+  z-index: 100;
+}
+
+.username {
+  display: flex;
+  text-align: end;
+}
+
+.message-area {
+  position: fixed;
+  bottom: 0;
+  width: inherit;
+  margin-bottom: 20px;
+  z-index: 2;
+  background-color: white;
+  border-radius: 5px;
+  resize: none;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  display: none;
+}
+
+.message-area-container {   
+ position: fixed;
+ bottom: 0;
+ height: 100px;
+ width: calc(100vw - 625px);
+ z-index: 1;
+ background-color: white;
+ display: flex;
+ align-items: center;
+}
+
+.greetings {
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 100px;  
+  padding-right: 350px;
+}
+
+.side-navigation {
+  height: calc(100% - 60px);  
+  width: 100px;  
+  background-color: gray;    
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  justify-content: space-between;  
+}
+
+.side-navigation-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-sidebar {
+  margin-left: 120px;
+}
+
+.sidebar-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-side-bar {  
+  position: relative;
+  z-index: 0;
+}
+
+.sign-out-button {
+  font-size: 0.75rem;
+  transform: translateY(-10px);
+}
+
+.MuiDialogContent-root.css-ypiqx9-MuiDialogContent-root {
+  overflow: unset;
+}
+
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation6.MuiSnackbarContent-root.css-1eqdgzv-MuiPaper-root-MuiSnackbarContent-root {
+  background-color: green;
+}
+
+.chat-body {
+  padding: 0 20px 150px 360px;
+}
+
+.top-toolbar {
+    justify-content: space-between;
+    padding-right: 250px;
+}
+
+.top-bar-email {  
+  text-align: center;
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.invite {
+  font-size: 0.75rem;
+}
+
+.toolbar-close-button {
+  background-color: white;
+  display: none
+}
+
+.send-message-button {    
+  background-color: purple;
+  height: 55px;
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  width: 60px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 920px) {
+
+  .message-area-container {
+    width: 55vw   
+  } 
+
+  .chat-body {
+    overflow-x: hidden;
+  }
+
+  .right-side-bar {
+    display:none;
+  }
+
+  .greetings {
+    padding-right: 20px;
+  }
+
+   .top-bar-channel {
+    display: none
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .top-bar-email {      
+    flex-direction: column;
+  }
+
+  .message-area-container {
+    width: 50vw   
+  } 
+}
+
+@media screen and (max-width: 700px) {
+
+  .message-area-container { 
+    width: 90vw;
+    }
+
+  .invite {
+    display: none
+  }
+  .top-bar-email {      
+    display: none
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .message-area-container { 
+    width: 90vw;
+    }
+  
+  .top-toolbar {
+    padding-right: 0px;
+    justify-content: space-between;
+  }
+
+  .invite {
+    display: block
+  }
+
+  .invite-button {
+    transform: translateX(-100px);
+  }
+
+  .chat-body {
+    padding: 20px 20px 150px 20px;
+    margin-bottom: 100px;
+  }
+
+  .topbar-small {
+    padding-left: 0
+  }
+
+}
+
+@media screen and (max-width: 420px) {
+  .invite-button {
+    transform: translateX(-70px);
+  }
+  .toolbar-close-button {    
+    display: block
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .invite-button {
+    transform: translateX(-50px);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .invite-button {
+    transform: translateX(-30px);
+  }
+}
+
+
+
